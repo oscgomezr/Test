@@ -6,16 +6,18 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login/login.component';
 import { SharedModule } from './shared/shared.module';
 import { FormsModule } from '@angular/forms';
+import { ToDoModule } from './toDo/to-do.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+    ToDoModule,
     SharedModule
   ],
   providers: [],

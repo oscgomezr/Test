@@ -1,16 +1,18 @@
-<div class="content">
-    <h3>Login</h3>
-    
-    <div class="username">
-        <p>nombe Usuario</p>
-        <input type="text" placeholder="nombre de usuario" [(ngModel)]="user.username">
-    </div>
-    <div class="pass">
-        <p>Contraseña</p>
-        <input type="password" placeholder="Password" [(ngModel)]="user.password">
-    </div>
-    <div class="acciones">
-        <app-btn-confirm text='Login' (click)="login(user)"></app-btn-confirm>
-        <app-btn-sec text="Create User" (click)="addUser(user)"></app-btn-sec>
+<div class="background">
+    <div class="content">
+        <h3>Login</h3>
+        
+        <div class="username">
+            <p>Nombe Usuario</p>
+            <input type="text" placeholder="nombre de usuario" [(ngModel)]="user.username">
+        </div>
+        <div class="pass">
+            <p>Contraseña</p>
+            <input type="password" placeholder="Password" [(ngModel)]="user.password">
+        </div>
+        <div class="acciones">
+            <app-btn-confirm text='Login' (click)="login(user)"></app-btn-confirm>
+            <app-btn-sec text="Create User" (click)="addUser(user)"></app-btn-sec>
+        </div>
     </div>
 </div>

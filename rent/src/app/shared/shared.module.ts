@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BtnConfirmComponent } from './atomicComponents/btn-confirm/btn-confirm.component';
-import { BtnSecComponent } from './atomicComponents/btn-sec/btn-sec.component'
+import { BtnConfirmComponent } from './atomicComponents/btn-confirm.component';
+import { BtnSecComponent } from './atomicComponents/btn-sec.component'
 
 @NgModule({
   declarations: [
