@@ -1,6 +1,9 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Router } from '@angular/router';
 import { User } from 'src/app/model/user';
 import { UserService } from 'src/app/servicios/user.service';
+
+
 
 @Component({
   selector: 'app-login',
@@ -11,10 +14,9 @@ export class LoginComponent implements OnInit {
 
   user: User;
 
-  @Output() loginUser = new EventEmitter()
-
   constructor(
-    private sUser: UserService
+    private sUser: UserService,
+    private router: Router
   ) {
     this.user = new User('', '');
   }
@@ -29,6 +31,7 @@ export class LoginComponent implements OnInit {
     if (this.sUser.loginUser(user)) {
       localStorage.setItem('username', user.username);
       console.log('Usuario logueado');
+      this.router.navigateByUrl('/Home')
     } else {
       console.log('Login incorrecto');
     }
