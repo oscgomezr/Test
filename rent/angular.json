@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "rent"
+    }
+  },
+  "defaultProject": "rent",
+  "cli": {
+    "analytics": false
+  }
 }
